@@ -22,37 +22,33 @@ public class Rectangle
         setFilled(filled);
     }
 
-    /** Return width */
     public double getWidth() {
         return width;
     }
 
-    /** Set a new width */
     public void setWidth(double width) {
         this.width = width;
     }
 
-    /** Return height */
-    public double getheight() {
+    public double getHeight() {
         return height;
     }
 
-    /** Set a new height */
-    public void setheight(double height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    @Override /** Return area */
+    @Override
     public double getArea() {
         return width * height;
     }
 
-    @Override /** Return perimeter */
+    @Override
     public double getPerimeter() {
         return 2 * (width * height);
     }
 
-    @Override /** Return String discription of this rectangle */
+    @Override
     public String toString() {
         return super.toString() + "\nWidth: " + width + "\nHeight: " + height
                 + "\nArea: " + getArea() + "\nPerimeter: " + getPerimeter();

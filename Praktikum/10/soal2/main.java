@@ -1,48 +1,29 @@
 package soal2;
 
-public class main {
-    /** Main method */
+public class Main {
     public static void main(String[] args) {
-        // Create two Circle objects
-        Circle circle1 = new Circle(15, "red", true);
-        Circle circle2 = new Circle(10, "blue", false);
+        Circle circle1 = new Circle(60, "purple", false);
+        Circle circle2 = new Circle(43, "cyan", true);
 
-        // Display circle1
         System.out.println("\nCircle 1: ");
-        print(circle1);
+        System.out.println(circle1);
 
-        // Display circle2
         System.out.println("\nCircle 2: ");
-        print(circle2);
+        System.out.println(circle2);
 
-        // Display larger circle
-        print("\nThe larger of the two circles was ");
-        print(Circle.max(circle1, circle2));
+        System.out.println("\nThe larger of the two circles was ");
+        System.out.println(Circle.max(circle1, circle2));
 
-        // Create two Rectangle objects
-        Rectangle rectangle1 = new Rectangle(4, 5, "green", true);
-        Rectangle rectangle2 = new Rectangle(4.2, 5, "orange", true);
+        Rectangle rectangle1 = new Rectangle(20, 14, "yellow", false);
+        Rectangle rectangle2 = new Rectangle(18, 16, "black", true);
 
-        // Display circle1
         System.out.println("\nRectangle 1: ");
-        print(circle1);
+        System.out.println(rectangle1);
 
-        // Display circle2
         System.out.println("\nRectangle 2: ");
-        print(circle2);
+        System.out.println(rectangle2);
 
-        // Display larger circle
-        print("\nThe larger of the two rectangles was ");
-        print(Rectangle.max(rectangle1, rectangle2));
-    }
-
-    // Displays a string
-    public static void print(String s) {
-        System.out.println(s);
-    }
-
-    // Displays a GeometricObject
-    public static void print(GeometricObject o) {
-        System.out.println(o);
+        System.out.println("\nThe larger of the two rectangles was ");
+        System.out.println(Rectangle.max(rectangle1, rectangle2));
     }
 }

@@ -18,32 +18,29 @@ public class Circle
         setFilled(filled);
     }
 
-    /** Return radius */
     public double getRadius() {
         return radius;
     }
 
-    /** Set a new radius */
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    @Override /** Return area */
+    @Override
     public double getArea() {
         return radius * radius * Math.PI;
     }
 
-    /** Return diameter */
     public double getDiameter() {
         return 2 * radius;
     }
 
-    @Override /** Return perimeter */
+    @Override
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
 
-    @Override /** Return String discription of Circle object */
+    @Override
     public String toString() {
         return super.toString() + "\nRadius: " + radius + "\nArea: " + getArea() +
                 "\nDiameter: " + getDiameter() + "\nPerimeter: " + getPerimeter();
