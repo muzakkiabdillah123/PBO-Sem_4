@@ -27,4 +27,8 @@ public class GeometricObject {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    public String toString() {
+        return "GeometricObject[color = " + color + ", filled = " + filled + "]";
+    }
 }
